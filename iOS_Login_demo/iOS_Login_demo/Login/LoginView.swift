@@ -48,9 +48,28 @@ struct LoginFormCardView: View {
         .background(
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.white)
-                .shadow(radius: 50)
+                .shadow(radius: 25)
         )
         .padding()
+        ZStack {
+            Button(action: {
+                authenticateUser()
+                print("Button clicked!")
+            }) {
+                Text("LOGIN")
+                    .frame(maxWidth: 200)
+                    .frame(height: 50)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(25)
+                    .offset(y: 115)
+                    .shadow(radius: 25)
+            }
+            .padding()
+        }
+    }
+    func authenticateUser() {
+        
     }
 }
 struct BackgroundView: View {
@@ -83,81 +102,6 @@ struct BackgroundView: View {
     }
 }
 
-struct LoginView1: View {
-
-    @State private var emailId = ""
-    @State private var password = ""
-
-    var body: some View {
-        GeometryReader { proxy in
-            ZStack {
-                VStack {
-                    LinearGradient(
-                        gradient: Gradient(colors: [Color(red: 70/255, green: 128/255, blue: 221/255), Color(red: 85/255, green: 80/255, blue: 188/255)]),
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                    .frame(maxHeight: .infinity)
-
-                    ZStack {
-                        Image(systemName: "house.fill")
-                            .resizable()
-                            .frame(width: 100, height: 100)
-                            .background(Color.white)
-                            .clipShape(Circle())
-                            .foregroundColor(Color(red: 70/255, green: 128/255, blue: 221/255))
-                    }
-                }
-                .frame(height: proxy.size.height/2 + 40)
-                ZStack(alignment: .center) {
-                    VStack(spacing: 16) {
-
-                        Text("LOGIN")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-
-                        TextField("Email", text: $emailId)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-
-                        SecureField("Password", text: $password)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-
-                        Spacer().frame(height: 50)
-                    }
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.white)
-                            .shadow(radius: 10)
-                    )
-                    .padding()
-                }
-
-
-                    Button(action: {
-                        authenticateUser()
-                        print("Button clicked!")
-                    }) {
-                        Text("LOGIN")
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 50)
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(25)
-                    }
-                    .padding()
-
-            }
-        }
-        .edgesIgnoringSafeArea(.all)
-    }
-
-    func authenticateUser() {
-        // Authenticate user logic here
-    }
-
-}
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {

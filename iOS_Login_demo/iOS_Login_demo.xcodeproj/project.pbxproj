@@ -17,6 +17,7 @@
 		86417801287D6432002F3F76 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864177FF287D6432002F3F76 /* StorageService.swift */; };
 		86417802287D6432002F3F76 /* StorageServiceProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86417800287D6432002F3F76 /* StorageServiceProtocal.swift */; };
 		865AADD22A420B3C00DE7E88 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865AADD12A420B3C00DE7E88 /* LoginViewModel.swift */; };
+		8673AF022A43470F00591A1E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673AF012A43470F00591A1E /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		864177FF287D6432002F3F76 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		86417800287D6432002F3F76 /* StorageServiceProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageServiceProtocal.swift; sourceTree = "<group>"; };
 		865AADD12A420B3C00DE7E88 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8673AF012A43470F00591A1E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				864177ED287D5424002F3F76 /* Assets.xcassets */,
 				864177EF287D5424002F3F76 /* LaunchScreen.storyboard */,
 				864177F2287D5424002F3F76 /* Info.plist */,
+				8673AF012A43470F00591A1E /* CardView.swift */,
 			);
 			path = iOS_Login_demo;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86417802287D6432002F3F76 /* StorageServiceProtocal.swift in Sources */,
+				8673AF022A43470F00591A1E /* CardView.swift in Sources */,
 				864177F9287D56D0002F3F76 /* LoginView.swift in Sources */,
 				86417801287D6432002F3F76 /* StorageService.swift in Sources */,
 				864177FD287D5EB1002F3F76 /* AppContext.swift in Sources */,
