@@ -8,27 +8,20 @@
 import SwiftUI
 
 struct LoginView: View {
-   
-    @State private var emailId = ""
-    @State private var password = ""
-    
+    @ObservedObject var viewModel = LoginViewModel()
+
     var body: some View {
         ZStack {
             BackgroundView()
-            LoginFormCardView(emailId: emailId, password: password)
+            LoginFormCardView(viewModel: viewModel)
             
         }
         .edgesIgnoringSafeArea(.all)
     }
-    
-    func authenticateUser() {
-        // Authenticate user logic here
-    }
 
 }
 struct LoginFormCardView: View {
-    @State var emailId = ""
-    @State var password = ""
+    @State var viewModel: LoginViewModel
     var body: some View {
         VStack(spacing: 16) {
             Text("LOGIN")
@@ -36,10 +29,10 @@ struct LoginFormCardView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.black)
 
-            TextField("Email", text: $emailId)
+            TextField("Email", text: $viewModel.emailId)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
 
-            SecureField("Password", text: $password)
+            SecureField("Password", text: $viewModel.password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
 
             Spacer().frame(height: 50)
@@ -53,7 +46,7 @@ struct LoginFormCardView: View {
         .padding()
         ZStack {
             Button(action: {
-                authenticateUser()
+                viewModel.authenticateUser()
                 print("Button clicked!")
             }) {
                 Text("LOGIN")
@@ -67,9 +60,7 @@ struct LoginFormCardView: View {
             }
             .padding()
         }
-    }
-    func authenticateUser() {
-        
+        .zIndex(4)
     }
 }
 struct BackgroundView: View {
