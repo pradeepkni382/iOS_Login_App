@@ -7,13 +7,14 @@
 
 import SwiftUI
 
+
+
 struct LoginView: View {
     @ObservedObject var viewModel = LoginViewModel()
-
     var body: some View {
         ZStack {
             BackgroundView()
-            VStack() {
+            VStack(spacing:-55) {
                 LoginFormCardView(viewModel: viewModel)
                 VStack{
                     ZStack {
@@ -35,8 +36,6 @@ struct LoginView: View {
                     .zIndex(4)
                 }
             }
-            
-            
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -66,25 +65,6 @@ struct LoginFormCardView: View {
                 .shadow(radius: 25)
         )
         .padding()
-//        VStack{
-//            ZStack {
-//                Button(action: {
-//                    viewModel.authenticateUser()
-//                    print("Button clicked!")
-//                }) {
-//                    Text("LOGIN")
-//                        .frame(maxWidth: 200)
-//                        .frame(height: 50)
-//                        .background(Color.blue)
-//                        .foregroundColor(.white)
-//                        .cornerRadius(25)
-////                        .offset(y: 115)
-//                        .shadow(radius: 25)
-//                }
-//                .padding()
-//            }
-//            .zIndex(4)
-//        }
     }
 }
 struct BackgroundView: View {
