@@ -10,13 +10,19 @@ import Foundation
 class LoginViewModel: ObservableObject {
     @Published var emailId = ""
     @Published var password = ""
+    @Published var userLoggedIn = false
     
     init() {
         
     }
 
     func authenticateUser() {
-        NSLog("authenticateUser -- \n  emailId \(emailId) \n password \(password)")
+        if !emailId.isEmpty && !password.isEmpty {
+            NSLog("authenticateUser -- \n  emailId \(emailId) \n password \(password)")
+            userLoggedIn.toggle()
+        } else {
+            NSLog("user_id password is null")
+        }
     }
     deinit {
         

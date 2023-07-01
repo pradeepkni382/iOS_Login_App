@@ -18,6 +18,10 @@
 		86417802287D6432002F3F76 /* StorageServiceProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86417800287D6432002F3F76 /* StorageServiceProtocal.swift */; };
 		865AADD22A420B3C00DE7E88 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865AADD12A420B3C00DE7E88 /* LoginViewModel.swift */; };
 		8673AF022A43470F00591A1E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673AF012A43470F00591A1E /* CardView.swift */; };
+		86EF861A2A50AA9C00C32E47 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF86192A50AA9C00C32E47 /* DashboardView.swift */; };
+		86EF861C2A50AACA00C32E47 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF861B2A50AACA00C32E47 /* DashboardViewModel.swift */; };
+		86EF861E2A50AF6300C32E47 /* user_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 86EF861D2A50AF6300C32E47 /* user_data.json */; };
+		86EF86212A50B2F800C32E47 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF86202A50B2F800C32E47 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		86417800287D6432002F3F76 /* StorageServiceProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageServiceProtocal.swift; sourceTree = "<group>"; };
 		865AADD12A420B3C00DE7E88 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8673AF012A43470F00591A1E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		86EF86192A50AA9C00C32E47 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		86EF861B2A50AACA00C32E47 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		86EF861D2A50AF6300C32E47 /* user_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user_data.json; sourceTree = "<group>"; };
+		86EF86202A50B2F800C32E47 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,8 @@
 		864177E3287D5422002F3F76 /* iOS_Login_demo */ = {
 			isa = PBXGroup;
 			children = (
+				86EF861F2A50B2DF00C32E47 /* Model */,
+				86EF86182A50AA0900C32E47 /* Dashboard */,
 				865AADD02A420B2400DE7E88 /* Login */,
 				864177E4287D5422002F3F76 /* AppDelegate.swift */,
 				864177E6287D5422002F3F76 /* SceneDelegate.swift */,
@@ -83,6 +93,7 @@
 		864177FE287D6432002F3F76 /* StorageService */ = {
 			isa = PBXGroup;
 			children = (
+				86EF861D2A50AF6300C32E47 /* user_data.json */,
 				864177FF287D6432002F3F76 /* StorageService.swift */,
 				86417800287D6432002F3F76 /* StorageServiceProtocal.swift */,
 			);
@@ -96,6 +107,23 @@
 				865AADD12A420B3C00DE7E88 /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		86EF86182A50AA0900C32E47 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				86EF86192A50AA9C00C32E47 /* DashboardView.swift */,
+				86EF861B2A50AACA00C32E47 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		86EF861F2A50B2DF00C32E47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86EF86202A50B2F800C32E47 /* UserData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				864177F1287D5424002F3F76 /* LaunchScreen.storyboard in Resources */,
+				86EF861E2A50AF6300C32E47 /* user_data.json in Resources */,
 				864177EE287D5424002F3F76 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,9 +201,12 @@
 				8673AF022A43470F00591A1E /* CardView.swift in Sources */,
 				864177F9287D56D0002F3F76 /* LoginView.swift in Sources */,
 				86417801287D6432002F3F76 /* StorageService.swift in Sources */,
+				86EF861C2A50AACA00C32E47 /* DashboardViewModel.swift in Sources */,
 				864177FD287D5EB1002F3F76 /* AppContext.swift in Sources */,
+				86EF86212A50B2F800C32E47 /* UserData.swift in Sources */,
 				865AADD22A420B3C00DE7E88 /* LoginViewModel.swift in Sources */,
 				864177E5287D5422002F3F76 /* AppDelegate.swift in Sources */,
+				86EF861A2A50AA9C00C32E47 /* DashboardView.swift in Sources */,
 				864177FB287D5E95002F3F76 /* AppDelegateProtocol.swift in Sources */,
 				864177E7287D5422002F3F76 /* SceneDelegate.swift in Sources */,
 			);
