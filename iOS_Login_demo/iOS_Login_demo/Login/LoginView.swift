@@ -13,7 +13,29 @@ struct LoginView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-            LoginFormCardView(viewModel: viewModel)
+            VStack() {
+                LoginFormCardView(viewModel: viewModel)
+                VStack{
+                    ZStack {
+                        Button(action: {
+                            viewModel.authenticateUser()
+                            print("Button clicked!")
+                        }) {
+                            Text("LOGIN")
+                                .frame(maxWidth: 200)
+                                .frame(height: 50)
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(25)
+        //                        .offset(y: 115)
+                                .shadow(radius: 25)
+                        }
+                        .padding()
+                    }
+                    .zIndex(4)
+                }
+            }
+            
             
         }
         .edgesIgnoringSafeArea(.all)
@@ -23,7 +45,7 @@ struct LoginView: View {
 struct LoginFormCardView: View {
     @State var viewModel: LoginViewModel
     var body: some View {
-        VStack(spacing: 16) {
+        VStack() {
             Text("LOGIN")
                 .font(.title)
                 .fontWeight(.bold)
@@ -44,23 +66,25 @@ struct LoginFormCardView: View {
                 .shadow(radius: 25)
         )
         .padding()
-        ZStack {
-            Button(action: {
-                viewModel.authenticateUser()
-                print("Button clicked!")
-            }) {
-                Text("LOGIN")
-                    .frame(maxWidth: 200)
-                    .frame(height: 50)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(25)
-                    .offset(y: 115)
-                    .shadow(radius: 25)
-            }
-            .padding()
-        }
-        .zIndex(4)
+//        VStack{
+//            ZStack {
+//                Button(action: {
+//                    viewModel.authenticateUser()
+//                    print("Button clicked!")
+//                }) {
+//                    Text("LOGIN")
+//                        .frame(maxWidth: 200)
+//                        .frame(height: 50)
+//                        .background(Color.blue)
+//                        .foregroundColor(.white)
+//                        .cornerRadius(25)
+////                        .offset(y: 115)
+//                        .shadow(radius: 25)
+//                }
+//                .padding()
+//            }
+//            .zIndex(4)
+//        }
     }
 }
 struct BackgroundView: View {
