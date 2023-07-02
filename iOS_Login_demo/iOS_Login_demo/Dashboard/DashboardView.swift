@@ -17,7 +17,15 @@ struct DashboardView: View {
                         Text("nothing to print")
                     } else {
                         ForEach((viewModel.user_data?.users)!, id: \.self) { user in
-                            Text(user.name!)
+                            NavigationLink {
+                                DetailView(userDetails: user)
+                            } label: {
+                                VStack(alignment: .leading) {
+                                    Text(user.name!)
+                                    Text("Favourite Food:- \(user.favoriteFood!)")
+                                    Text("EmailID:- \(user.email!)")
+                                }
+                            }
                         }
                     }
                 }

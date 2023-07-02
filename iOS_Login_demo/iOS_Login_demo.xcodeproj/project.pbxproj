@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8611D7542A5131C400F12ABB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8611D7532A5131C400F12ABB /* DetailView.swift */; };
 		864177E5287D5422002F3F76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864177E4287D5422002F3F76 /* AppDelegate.swift */; };
 		864177E7287D5422002F3F76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864177E6287D5422002F3F76 /* SceneDelegate.swift */; };
 		864177EE287D5424002F3F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864177ED287D5424002F3F76 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8611D7532A5131C400F12ABB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		864177E1287D5422002F3F76 /* iOS_Login_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Login_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864177E4287D5422002F3F76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864177E6287D5422002F3F76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8611D7522A5131AA00F12ABB /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				8611D7532A5131C400F12ABB /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
 		864177D8287D5422002F3F76 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 				86EF861F2A50B2DF00C32E47 /* Model */,
 				86EF86182A50AA0900C32E47 /* Dashboard */,
 				865AADD02A420B2400DE7E88 /* Login */,
+				8611D7522A5131AA00F12ABB /* DetailView */,
 				864177E4287D5422002F3F76 /* AppDelegate.swift */,
 				864177E6287D5422002F3F76 /* SceneDelegate.swift */,
 				864177FC287D5EB1002F3F76 /* AppContext.swift */,
@@ -204,6 +215,7 @@
 				86EF861C2A50AACA00C32E47 /* DashboardViewModel.swift in Sources */,
 				864177FD287D5EB1002F3F76 /* AppContext.swift in Sources */,
 				86EF86212A50B2F800C32E47 /* UserData.swift in Sources */,
+				8611D7542A5131C400F12ABB /* DetailView.swift in Sources */,
 				865AADD22A420B3C00DE7E88 /* LoginViewModel.swift in Sources */,
 				864177E5287D5422002F3F76 /* AppDelegate.swift in Sources */,
 				86EF861A2A50AA9C00C32E47 /* DashboardView.swift in Sources */,
