@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct DetailView: View {
-    var userDetails: User
+    @ObservedObject var viewModel: DetailViewModel
+    
+    init(userDetails: User) {
+        self.viewModel = DetailViewModel(userData: userDetails)
+    }
+    
     var body: some View {
         //        NavigationView {
         VStack(alignment: .leading) {
-            Text("Details for \(userDetails.name!) are as below")
+            Text("Details for \(viewModel.details.name!) are as below")
             Divider()
-            Text("** Favourite food of \(userDetails.name!) is \n \(userDetails.favoriteFood!) \n")
-            Text("** You can contact \(userDetails.name!) at \n \(userDetails.email!) \n")
-            Text("** \(userDetails.name!)'s wishlist items are as below \n ")
+            Text("** Favourite food of \(viewModel.details.name!) is \n\n \(viewModel.details.favoriteFood!) \n")
+            Text("** You can contact \(viewModel.details.name!) at \n\n \(viewModel.details.email!) \n")
+            Text("** \(viewModel.details.name!)'s wishlist items are as below \n\n ")
             List {
-                ForEach((userDetails.wishlist ?? []), id: \.self) { wishe in
+                ForEach((viewModel.details.wishlist ?? []), id: \.self) { wishe in
                     Text(wishe)
                 }
                 

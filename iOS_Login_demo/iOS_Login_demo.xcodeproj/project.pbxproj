@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8611D7542A5131C400F12ABB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8611D7532A5131C400F12ABB /* DetailView.swift */; };
+		8611D7562A51E2C200F12ABB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8611D7552A51E2C200F12ABB /* DetailViewModel.swift */; };
 		864177E5287D5422002F3F76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864177E4287D5422002F3F76 /* AppDelegate.swift */; };
 		864177E7287D5422002F3F76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864177E6287D5422002F3F76 /* SceneDelegate.swift */; };
 		864177EE287D5424002F3F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864177ED287D5424002F3F76 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		8611D7532A5131C400F12ABB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8611D7552A51E2C200F12ABB /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		864177E1287D5422002F3F76 /* iOS_Login_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Login_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864177E4287D5422002F3F76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864177E6287D5422002F3F76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				8611D7532A5131C400F12ABB /* DetailView.swift */,
+				8611D7552A51E2C200F12ABB /* DetailViewModel.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				86EF86212A50B2F800C32E47 /* UserData.swift in Sources */,
 				8611D7542A5131C400F12ABB /* DetailView.swift in Sources */,
 				865AADD22A420B3C00DE7E88 /* LoginViewModel.swift in Sources */,
+				8611D7562A51E2C200F12ABB /* DetailViewModel.swift in Sources */,
 				864177E5287D5422002F3F76 /* AppDelegate.swift in Sources */,
 				86EF861A2A50AA9C00C32E47 /* DashboardView.swift in Sources */,
 				864177FB287D5E95002F3F76 /* AppDelegateProtocol.swift in Sources */,
